@@ -1,0 +1,148 @@
+/* Styling for the main title section */
+.main-title-section {
+  z-index: 1;
+  position: relative;
+  margin: 0 auto 80px;
+  border: 2px solid #1787e0;
+  font-size: 30px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  width: fit-content;
+  transition: all;
+  letter-spacing: 0.8px;
+}
+
+/* Left circular decoration for the title */
+.main-title-section::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #1787e0;
+  border-radius: 50%;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Right circular decoration for the title */
+.main-title-section::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #1787e0;
+  border-radius: 50%;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Animation effect when hovering over the title */
+.main-title-section:hover::before {
+  z-index: -1;
+  animation: from-left 0.5s linear forwards;
+}
+
+.main-title-section:hover::after {
+  z-index: -1;
+  animation: from-rigth 0.5s linear forwards;
+}
+
+/* Change text color and border when hovered */
+.main-title-section:hover {
+  color: white;
+  border: 2px solid white;
+  transition-delay: 0.5s;
+}
+
+/* Animation to move elements up and down */
+@keyframes up-and-down {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+}
+
+/* Animation for slight vibration effect */
+@keyframes vib {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40%,
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Animation for left circle expanding */
+@keyframes from-left {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    left: 0;
+    border-radius: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+
+/* Animation for right circle expanding */
+@keyframes from-rigth {
+  50% {
+    right: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    right: 0;
+    border-radius: 0;
+    width: 51%;
+    height: 100%;
+  }
+}
+
+/* Animation for subtle left to right movement */
+@keyframes left-right {
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+/* Animation for flashing effect */
+@keyframes flash {
+  0%,
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
+}
+
+/* Styling for product card images */
+.product-card img {
+  width: 100%;
+  height: 250px; /* Fixed height */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Truncate long product titles */
+.product-card .card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}

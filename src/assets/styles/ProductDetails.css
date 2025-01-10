@@ -1,0 +1,123 @@
+/* Styling for the main product detail page container */
+.productDetail-page {
+  padding: 40px;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Styling for the row layout inside the product detail page */
+.productDetail-page .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap-reverse;
+}
+
+/* Styling for each column inside the product detail page */
+.productDetail-page .col-md-6 {
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+/* Wrapper for the product image */
+.productDetail-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+/* Styling for the product image */
+.productDetail-image-wrapper img {
+  height: 50% !important;
+}
+
+/* Image inside the product detail page */
+.productDetail-image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Styling for the product information container */
+.productDetail-info {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Styling for the product title */
+.productDetail-info h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Styling for product description and details */
+.productDetail-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Styling for the last paragraph inside product info */
+.productDetail-info p:last-child {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Styling for the add to cart button */
+.productDetail-add-to-cart-button {
+  background: linear-gradient(135deg, #1787e0, #1787e0);
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Hover effect for the add to cart button */
+.productDetail-add-to-cart-button:hover {
+  background: linear-gradient(135deg, #1787e0, #1787e0);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Active state for the add to cart button */
+.productDetail-add-to-cart-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the cart count inside the product details */
+.productDetail-info p.productDetail-cart-count {
+  font-weight: bold;
+  color: #28a745;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+.productDetail-modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}

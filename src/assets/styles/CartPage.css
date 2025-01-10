@@ -1,0 +1,93 @@
+/* Cart table with margin from the top */
+.cart-table {
+  margin-top: 100px;
+}
+
+/* Product image styling */
+.product-image {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Quantity input styling */
+.quantity {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+/* Styling for quantity adjustment buttons */
+.quantity-buttons .btn-outline-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  font-size: 20px;
+}
+
+/* Total price section with styling */
+.total-price {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Dark theme for table header */
+.thead-dark th {
+  background-color: #343a40;
+  color: white;
+}
+
+/* Animation effect when quantity changes */
+.quantity.animate {
+  animation: pulse 0.5s ease-in-out;
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Pulse animation effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+/* Empty cart message styling */
+.empty-cart-message {
+  text-align: center;
+  padding: 50px 0;
+  font-family: Arial, sans-serif;
+  color: #555;
+  margin-top: 50px; /* Ensure it doesn't stick to the top */
+}
+
+/* Heading style for empty cart message */
+.empty-cart-message h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #e83e8c;
+}
+
+/* Paragraph style for empty cart message */
+.empty-cart-message p {
+  font-size: 16px;
+  margin-top: 0;
+  color: #6c757d;
+}

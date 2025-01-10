@@ -1,0 +1,92 @@
+/* Center navbar links on larger screens */
+@media (min-width: 992px) {
+  #navbarScroll {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Styling for navigation links */
+.nav-link-custom {
+  color: #000;
+  font-weight: 500;
+  padding: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Change color and background on hover */
+.nav-link-custom:hover {
+  color: #ff4500;
+  background-color: rgba(255, 69, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Active navigation link styling */
+.nav-link-custom.active {
+  color: #ff4500;
+  background-color: rgba(255, 69, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Navbar shadow for better visibility */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo size inside navbar */
+.navbar .navbar-brand img {
+  height: 60px;
+}
+
+/* Remove border from navbar toggler */
+.navbar-toggler {
+  border-color: transparent;
+}
+
+/* Space between navbar elements */
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+/* Align button text and icons */
+.navbar .btn-outline-success {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Dropdown button styling */
+#category-dropdown {
+  font-size: 16px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown button hover effect */
+#category-dropdown:hover,
+#category-dropdown:focus {
+  background-color: #0056b3;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  min-width: 200px;
+  text-align: center;
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+  font-size: 14px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Change dropdown item color on hover */
+.dropdown-item:hover,
+.dropdown-item.active {
+  background-color: #28a745;
+  color: white;
+}

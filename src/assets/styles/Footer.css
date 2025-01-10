@@ -1,0 +1,33 @@
+/* Make the body take full height and align content in a column */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* App container with a flexible layout */
+.App {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content takes available space */
+.main-content {
+  flex: 1;
+}
+
+/* Footer styling with a fixed look at the bottom */
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: auto;
+}
